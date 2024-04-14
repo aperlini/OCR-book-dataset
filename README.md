@@ -18,7 +18,7 @@ The project involves python FastAPI web framework with MySQL to provide an api a
 
 ### 3. OCR GUI saving new book extract to database
 
-![new-entry]img/new-entry.gif)
+![new-entry](img/new-entry.gif)
 
 ### 4. Refreshing client to see effective change
 
