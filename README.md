@@ -10,17 +10,17 @@ The project involves python FastAPI web framework with MySQL to provide an api a
 
 ### 1. Default Client 
 
-![webservice](/home/novovaccum/Documents/code/projects/2024/ocr-passages/img/webservice.gif)
+![webservice](img/webservice.gif)
 
 ### 2. OCR GUI while translating image selection to text
 
-![ocr](/home/novovaccum/Documents/code/projects/2024/ocr-passages/img/ocr.gif)
+![ocr](img/ocr.gif)
 
 ### 3. OCR GUI saving new book extract to database
 
-![new-entry](/home/novovaccum/Documents/code/projects/2024/ocr-passages/img/new-entry.gif)
+![new-entry]img/new-entry.gif)
 
 ### 4. Refreshing client to see effective change
 
-![refresh](/home/novovaccum/Documents/code/projects/2024/ocr-passages/img/refresh.gif)
+![refresh](img/refresh.gif)
 
