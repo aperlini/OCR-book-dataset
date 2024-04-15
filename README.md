@@ -26,10 +26,6 @@ The project involves python FastAPI web framework with MySQL to provide an api a
 
 ![refresh](img/refresh.gif)
 
-## Requirements
-
-...
-
 ## Project Structure
 
 ```bash
@@ -43,16 +39,42 @@ The project involves python FastAPI web framework with MySQL to provide an api a
 
 ```
 
+## Requirements
+
+### API
+
+Running the API requires [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/) as a pre-requisite
+
+### GUI
+
+...
+
 ## Installation
 
-### Build and run API
+### API
+
+#### Build and run
 
 ```bash
-cd api
-docker compose up --build
+cd api && docker compose up --build
 ```
 
+#### Run
 
+```bash
+cd api && docker compose up
+```
+
+From your web-browser, access :
+
+- front-end : http://localhost:3000
+- back-end : http://localhost:8989/docs
+
+FastAPI uses Swagger UI to generate an interactive documentation to visualize and interact with the api.
+
+### GUI
+
+...
 
 
 
