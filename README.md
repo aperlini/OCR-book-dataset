@@ -1,6 +1,8 @@
 # OCR-book-dataset
 
-**work in progress**
+**Work In Progress...**
+
+---
 
 Simple project made using OpenCV and Tesseract with Qt to read screenshots from book pages and extract text content to be fetch into a dataset. The aim was to automate the process of taking notes manually and to implement an interface where the user can select book extracts to be saved.
 
@@ -23,4 +25,38 @@ The project involves python FastAPI web framework with MySQL to provide an api a
 ### 4. Refreshing client to see effective change
 
 ![refresh](img/refresh.gif)
+
+## Requirements
+
+...
+
+## Project Structure
+
+```bash
+.
+├── api
+│   ├── backend
+│   ├── db
+│   └── frontend
+└── ocr
+    └── gui
+
+```
+
+## Installation
+
+### Build and run API
+
+```bash
+cd api
+docker compose up --build
+```
+
+
+
+
+
+
+
+
 
