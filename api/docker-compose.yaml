@@ -1,0 +1,57 @@
+  version: '3.9'
+
+  services:
+    db:
+      container_name: mysql
+      image: mysql:8
+      restart: always
+      environment:
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+        - MYSQL_DATABASE=${MYSQL_DATABASE}
+      env_file:
+          - .env
+      ports:
+        - "3306:3306"
+      volumes:
+        - ./db/dump:/docker-entrypoint-initdb.d
+        - ./db/db_data:/var/lib/mysql
+
+    backend:
+      container_name: fastapi
+      build:
+        context: ./backend
+        dockerfile: Dockerfile
+      command: ["./wait-for-it.sh", "db:3306", "--", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "5000", "--reload"]
+      working_dir: /backend
+      volumes:
+        - ./backend:/backend
+      restart: always
+      env_file:
+          - .env
+      ports:
+        - "8989:5000"
+      depends_on:
+        - db
+
+    frontend:
+      container_name: react
+      build:
+        context: ./frontend
+        dockerfile: Dockerfile
+        target: production
+      environment:
+        - WATCHPACK_POLLING=true
+      volumes:
+        - ./frontend:/app
+      ports:
+        - "3000:3000"
+      depends_on:
+        - backend
+      
+    
+  volumes:
+    db_data:
+
+  
+
