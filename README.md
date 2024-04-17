@@ -11,7 +11,7 @@ The project involves python **FastAPI** web framework to provide an api and a si
 - [Demo](#Demo)
 - [Dependencies](#Dependencies)
 - [Installation](#Installation)
-- [Technology stack](#Technology stack)
+- [Technology-stack](#Technology-stack)
 
 
 
@@ -106,7 +106,7 @@ As our `gui` was build using OpenCV and Tesseract, we first need to install the 
 
 #### Qt Creator installation
 
-The simplest way to build the project as configured, and generate the final executable, is to use [Qt Creator](https://www.qt.io/product/development-tools). Installing Qt Creator will automatically install all necessary dependencies to build and generate the executable.
+The simplest way to build the project as configured, is to use [Qt Creator](https://www.qt.io/product/development-tools) to generate the final executable. Installing Qt Creator will automatically install all necessary dependencies to manage it.
 
 
 
@@ -121,15 +121,15 @@ The simplest way to build the project as configured, and generate the final exec
 
 ### Frontend
 
-- [React](https://react.dev/) : front-end Javascript Framework
-- [React-Bootstrap](https://react-bootstrap.github.io/) : Bootstrap front-end components (*wip*)
+- [React](https://react.dev/) : frontend Javascript Framework
+- [React-Bootstrap](https://react-bootstrap.github.io/) : Bootstrap frontend components (*wip*)
 - [Nginx](https://nginx.org/en/) : HTTP web server
 
 ### GUI
 
 - [Qt](https://www.qt.io/) : Cross-Platform application development framework for desktop, embedded and mobile
 - [QML](https://doc.qt.io/qt-6/qmlreference.html) : Multi-Paradigm Language for creating highly dynamic applications in Qt
-- [QtQuick](https://doc.qt.io/qt-6/qtquick-index.html) : standard library for writing QML applications
+- [QtQuick](https://doc.qt.io/qt-6/qtquick-index.html) : Standard library for writing QML applications
 - [OpenCV](https://github.com/opencv/opencv) : Open Source Computer Vision Library
 - [Tesseract](https://github.com/tesseract-ocr/tesseract) : Open Source OCR Engine
 
