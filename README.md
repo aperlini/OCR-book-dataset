@@ -1,8 +1,8 @@
 # OCR-book-dataset
 
-Simple project made using [OpenCV]([url](https://github.com/opencv/opencv)) and [Tesseract]([Tesseract](https://github.com/tesseract-ocr/tesseract)) with [C++ / Qt framework]([url](https://www.qt.io/)) to read screenshots from book pages and extract text content to be fetch into a dataset. The aim was to automate the process of taking notes manually and to implement an interface where the user can select book extracts to be saved.
+Simple project made using [OpenCV](https://github.com/opencv/opencv) and [Tesseract](https://github.com/tesseract-ocr/tesseract) with [C++ / Qt framework](https://www.qt.io/) to read screenshots from book pages and extract text content to be fetch into a dataset. The aim was to automate the process of taking notes manually and to implement an interface where the user can select book extracts to be saved.
 
-The project involves python [FastAPI](https://github.com/tiangolo/fastapi) web framework to provide an api and a simple frontend client built with [React](https://github.com/facebook/react) and [Nginx]([url](https://nginx.org/en/)) web server. Qt offers a GUI to process and translate image to text to generate new entries to the dataset.
+The project involves python [FastAPI](https://github.com/tiangolo/fastapi) web framework to provide an api and a simple frontend client built with [React](https://github.com/facebook/react) and [Nginx](https://nginx.org/en/) web server. Qt offers a GUI to process and translate image to text to generate new entries to the dataset.
 
 
 
