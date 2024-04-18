@@ -30,10 +30,10 @@ class Author(Base):
     firstname:str = Column(String(128), unique=True)
     lastname:str = Column(String(128), unique=True)
 
-    img_id = Column(Integer(), ForeignKey('images.id'))  
-    image = relationship("Image", back_populates="author")  
+    img_id = Column(Integer(), ForeignKey('images.id', ondelete="CASCADE"))  
+    image = relationship("Image", back_populates="author", single_parent=True, cascade="all, delete-orphan")  
 
-    books = relationship("Book", back_populates="author")
+    books = relationship("Book", back_populates="author", cascade="all, delete-orphan")
 
     created_at: datetime = Column(DateTime(timezone=True), server_default=func.now())
     updated_at: datetime = Column(DateTime(timezone=True), server_default=func.now())
@@ -49,13 +49,13 @@ class Book(Base):
     title:str = Column(String(100), unique=True)
     year:int = Column(Integer())   
 
-    img_id = Column(Integer(), ForeignKey('images.id'))  
-    image = relationship("Image", back_populates="book") 
+    img_id = Column(Integer(), ForeignKey('images.id', ondelete="CASCADE"))  
+    image = relationship("Image", back_populates="book", single_parent=True, cascade="all, delete-orphan") 
 
-    author_id = Column(Integer(), ForeignKey('authors.id'))  
-    author = relationship("Author", back_populates="books") 
+    author_id = Column(Integer(), ForeignKey('authors.id', ondelete="CASCADE"))  
+    author = relationship("Author", back_populates="books", single_parent=True, cascade="all, delete-orphan") 
 
-    passages = relationship("Passage", order_by="desc(Passage.page)", back_populates="book")
+    passages = relationship("Passage", order_by="desc(Passage.page)", back_populates="book", cascade="all, delete-orphan")
 
     created_at: datetime = Column(DateTime(timezone=True), server_default=func.now())
     updated_at: datetime = Column(DateTime(timezone=True), server_default=func.now())
@@ -68,7 +68,7 @@ class Passage(Base):
     content:str =Column(Text())
     page:int = Column(Integer())
 
-    book_id = Column(Integer(), ForeignKey('books.id'))  
+    book_id = Column(Integer(), ForeignKey('books.id', ondelete="CASCADE"))  
     book = relationship("Book", back_populates="passages", uselist=False) 
 
     created_at: datetime = Column(DateTime(timezone=True), server_default=func.now())
