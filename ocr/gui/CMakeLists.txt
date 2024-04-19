@@ -28,15 +28,16 @@ qt_add_qml_module(appgui
     URI gui
     VERSION 1.0      
     SOURCES
-        appcontroller.h appcontroller.cpp
-        imagetreatment.h imagetreatment.cpp
-        translationthread.h translationthread.cpp
-        authormodel.h authormodel.cpp
-        bookmodel.h bookmodel.cpp
-        apicontroller.h apicontroller.cpp
-        apidata.h apidata.cpp
-        utils.h utils.cpp
-        selection.h
+        Models/authormodel.h Models/authormodel.cpp
+        Models/bookmodel.h Models/bookmodel.cpp
+        Models/apidata.h Models/apidata.cpp         
+        Controllers/appcontroller.h Controllers/appcontroller.cpp
+        Controllers/apicontroller.h Controllers/apicontroller.cpp
+        OCR/imagetreatment.h OCR/imagetreatment.cpp
+        OCR/translationthread.h OCR/translationthread.cpp
+        Helpers/utils.h Helpers/utils.cpp
+        Helpers/selection.h
+
     QML_FILES
         Main.qml
         UI/HomeScreen/HomeScreen.qml
@@ -49,10 +50,11 @@ qt_add_qml_module(appgui
         UI/NetworkScreen/RegisterForm.qml
         UI/ResultScreen/TranslationProcess.qml
         UI/Utils/LoadingAnim.qml
+
     RESOURCES
-        Resources/images/spinner.gif
-        Resources/images/spinner1.gif
-        Resources/images/spinner2.gif
+        UI/assets/images/spinner.gif
+        UI/assets/images/spinner1.gif
+        UI/assets/images/spinner2.gif
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

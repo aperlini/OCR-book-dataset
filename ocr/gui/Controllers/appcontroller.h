@@ -12,11 +12,11 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "translationthread.h"
+#include "OCR/translationthread.h"
+#include "OCR/imagetreatment.h"
+#include "Helpers/selection.h"
+#include "Helpers/utils.h"
 #include "apicontroller.h"
-#include "imagetreatment.h"
-#include "selection.h"
-#include "utils.h"
 
 class AppController : public QObject
 {

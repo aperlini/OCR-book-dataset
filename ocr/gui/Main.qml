@@ -20,7 +20,7 @@ ApplicationWindow {
     visible:true
 
     readonly property int loaderSize: 100
-    readonly property string loaderGif :  Qt.resolvedUrl("Resources/images/spinner1.gif")
+    readonly property string loaderGif :  Qt.resolvedUrl("UI/assets/images/spinner1.gif")
 
     Material.theme: Material.Teal
     Material.accent: Material.Indigo

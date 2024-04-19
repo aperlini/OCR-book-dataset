@@ -12,8 +12,8 @@
 #include <QTimer>
 #include <QDebug>
 
-#include "authormodel.h"
-#include "bookmodel.h"
+#include "Models/authormodel.h"
+#include "Models/bookmodel.h"
 
 class ApiController : public QObject
 {

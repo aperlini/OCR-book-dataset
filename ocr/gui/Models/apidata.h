@@ -7,7 +7,7 @@
 class ApiData : public QObject
 {
     Q_OBJECT
-    QML_ELEMENT
+
 
     Q_PROPERTY(int dataIndex READ dataIndex WRITE setDataIndex NOTIFY dataIndexChanged FINAL)
 

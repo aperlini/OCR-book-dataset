@@ -4,10 +4,10 @@
 #include <QIcon>
 #include <QThread>
 
-#include "appcontroller.h"
-#include "bookmodel.h"
-#include "authormodel.h"
-#include "apicontroller.h"
+#include "Models/bookmodel.h"
+#include "Models/authormodel.h"
+#include "Controllers/apicontroller.h"
+#include "Controllers/appcontroller.h"
 
 int main(int argc, char *argv[])
 {

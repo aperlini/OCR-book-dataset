@@ -5,7 +5,7 @@
 #include <QDebug>
 
 #include <opencv2/opencv.hpp>
-#include "selection.h"
+#include "Helpers/selection.h"
 
 class ImageTreatment
 {
