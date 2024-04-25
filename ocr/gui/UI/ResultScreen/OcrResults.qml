@@ -70,19 +70,6 @@ Item {
         }
     }
 
-    // RoundButton {
-    //     id: scan_btn
-    //     text: "Rescan"
-    //     radius: btnRadius
-    //     width: btnWidth
-    //     anchors.top: scrollview.bottom
-    //     anchors.right: save_btn.left
-    //     highlighted: true
-    //     onClicked: {
-    //         console.log("will : 1) clear textarea, 2) disable next, 3) enable text selection on image")
-    //     }
-    // }
-
     RoundButton {
         text: "Back"
         width: btnWidth

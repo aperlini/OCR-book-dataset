@@ -71,7 +71,6 @@ RowLayout {
                 height: parent.height
                 autoTransform: true
                 fillMode: Image.PreserveAspectCrop
-                // source: "../../Resources/images/IMG_test.jpeg"
                 source: AppCtrl.image
                 smooth: true
                 opacity: imgOpacity
