@@ -15,7 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "ws": ">=8.17.1"
   },
   "scripts": {
     "start": "react-scripts start",
