@@ -3,7 +3,7 @@ alembic==1.13.1
 anyio==4.3.0
 cffi==1.16.0
 click==8.1.7
-cryptography==43.0.1
+cryptography==44.0.1
 databases==0.6.2
 exceptiongroup==1.2.0
 fastapi==0.110.0
