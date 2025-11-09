@@ -1,4 +1,4 @@
-aiomysql==0.2.0
+aiomysql==0.3.0
 alembic==1.13.1
 anyio==4.3.0
 cffi==1.16.0
